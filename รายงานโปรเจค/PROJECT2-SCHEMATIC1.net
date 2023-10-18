@@ -1,0 +1,12 @@
+* source PROJECT2
+X_U1A         N00345 N00415 N08132 GND A LM358
+C_C1         N00684 N00345  0.1u  
+D_D2         A N05044 D1N4148 
+V_V1         N00684 GND  
++SIN    0 0 0
+R_R5         GND N05044  200  
+R_Ra         N00684 N08132  6.8k  
+V_V2         N08132 GND 5Vdc
+R_R1         GND N00415  1k  
+R_R2         A N00415  20k  
+R_R3         N00345 GND  100k  

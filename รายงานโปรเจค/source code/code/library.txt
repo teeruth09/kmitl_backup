@@ -1,0 +1,9 @@
+ไลบารีที่ติดตั้งเพิ่ม
+#include <Servo.h>
+Servo Version 1.1.8
+#include <Keypad.h>
+Keypad Version 3.1.1
+#include <LCD_I2C.h>
+LiquidCrystal I2C Version 1.1.2
+#include "DHT.h"
+DHT sensor library Version 1.4.4

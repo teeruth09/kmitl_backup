@@ -1,0 +1,51 @@
+
+**** 04/23/23 01:35:22 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\USERS\TEERUTH\ONEDRIVE\\CIRCUIT\\project2-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "project2-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of c:\users\teeruth\orcads\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\project2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING project2-SCHEMATIC1.net ****
+* source PROJECT2
+X_U1A         N00345 N00415 N00816 GND N01159 LM358
+C_C1         N00670 N00345  0.1u  
+V_V2         M_UN0001 N00816 5Vdc
+V_V1         N00700 M_UN0002  
++SIN    0 0 0
+D_D1         N01159 N00643 D1N4148 
+V_V3         N00670 GND   
+R_Ra         N00670 N00816  6.8k  
+R_R5         GND N00643  200  
+R_R1         GND N00415  1k  
+R_R2         N01159 N00415  20k  
+R_R3         N00345 GND  100k  
+
+**** RESUMING project2-schematic1-bias.sim.cir ****
+.END
+
+ERROR -- Less than 2 connections at node N00700
+ERROR -- Less than 2 connections at node M_UN0002
+ERROR -- Node N00700 is floating
+ERROR -- Node M_UN0002 is floating

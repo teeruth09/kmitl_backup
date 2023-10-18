@@ -1,0 +1,43 @@
+
+**** 04/22/23 23:39:18 ******** PSpice 9.2.3 (Jan 2002) ******* ID# 251265024 
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\USERS\TEERUTH\ONEDRIVE\\CIRCUIT\\project1-schematic1-bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "project1-schematic1-bias.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of c:\users\teeruth\orcads\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC ".\project1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING project1-SCHEMATIC1.net ****
+* source PROJECT1
+V_V1         M_UN0001 N00091 5Vdc
+R_R1         N00220 N00091  5  
+R_R2         GND N00220  5  
+
+**** RESUMING project1-schematic1-bias.sim.cir ****
+.END
+
+ERROR -- Less than 2 connections at node GND
+ERROR -- Node M_UN0001 is floating
+ERROR -- Node N00091 is floating
+ERROR -- Node N00220 is floating
+ERROR -- Node GND is floating
